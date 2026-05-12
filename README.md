@@ -31,3 +31,11 @@ This site is deployed via GitHub Pages with a custom domain (bloomery.app) throu
 ## Built By
 
 [Two Desks](https://twodesks.app) — a two-person indie team.
+
+## Launch QA Notes
+
+- Pages: `index.html`, `privacy.html`
+- Metadata: canonical URLs, Open Graph, Twitter preview cards, theme color, SVG favicon, and social preview image are defined.
+- Accessibility: semantic sections, skip link, explicit email label, visible keyboard focus, and 44px minimum link targets are included.
+- Privacy: website signup, Buttondown, Cloudflare analytics, and on-device app data claims are aligned between landing and privacy pages.
+- Verified on May 12, 2026 with `python3 -m http.server` at desktop `1440x900` and mobile `390x844` widths.

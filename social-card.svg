@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Bloomery</title>
+  <desc id="desc">Track your mood kindly, privately.</desc>
+  <rect width="1200" height="630" fill="#F9F6F3"/>
+  <rect x="80" y="74" width="1040" height="482" rx="48" fill="#F4F1DE" stroke="#D9D1B8" stroke-width="2"/>
+  <path d="M990 392c34-42 78-58 128-43-9 53-50 90-111 96-4-21-10-39-17-53z" fill="#88A47C"/>
+  <path d="M944 388c31-59 80-87 138-77-10 63-60 108-130 110-2-12-5-23-8-33z" fill="#4B6B3C"/>
+  <path d="M962 472c-58-8-98-45-109-99 56-4 103 24 129 80-7 5-14 11-20 19z" fill="#D4849A"/>
+  <path d="M888 505c50-50 111-60 162-35-25 56-84 85-154 70-1-13-4-24-8-35z" fill="#E9A820"/>
+  <text x="150" y="224" fill="#4B6B3C" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="88" font-weight="700">Bloomery</text>
+  <text x="150" y="302" fill="#241717" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="48" font-weight="600">Track your mood kindly, privately.</text>
+  <text x="150" y="382" fill="#536F50" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="32">No streaks. No guilt. Your data stays on your device.</text>
+  <text x="150" y="438" fill="#6F675C" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="28">A mood journal that welcomes you back without judgment.</text>
+</svg>

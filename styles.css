@@ -12,7 +12,7 @@
     --color-surface: #F4F1DE;           /* Glade Beige */
     --color-text-primary: #241717;      /* Deep Loam */
     --color-text-secondary: #536F50;    /* Stone Bark */
-    --color-text-muted: #948E7E;        /* Lichen Grey */
+    --color-text-muted: #6F675C;        /* Deepened Lichen Grey */
     --color-action-primary: #4B6B3C;    /* Mindleaf Fern */
     --color-action-hover: #3A4928;      /* Deep Moss */
     --color-accent: #20F0D8;            /* Stream Teal */
@@ -55,6 +55,8 @@ html {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -63,6 +65,52 @@ body {
     color: var(--color-text-primary);
     line-height: 1.6;
     min-height: 100vh;
+}
+
+a {
+    color: var(--color-action-primary);
+    text-underline-offset: 0.18em;
+}
+
+a:hover {
+    color: var(--color-action-hover);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--color-action-primary);
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    left: var(--space-sm);
+    top: var(--space-sm);
+    z-index: 10;
+    transform: translateY(-150%);
+    padding: 10px 14px;
+    color: var(--color-background);
+    background: var(--color-text-primary);
+    border-radius: var(--radius-button);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -87,15 +135,15 @@ body {
 }
 
 .brand {
-    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-size: 4rem;
     font-weight: 600;
     color: var(--color-action-primary);
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
     margin-bottom: var(--space-xs);
 }
 
 .tagline {
-    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-size: 1.5rem;
     color: var(--color-text-secondary);
     margin-bottom: var(--space-lg);
     font-weight: 500;
@@ -128,6 +176,8 @@ body {
 
 .signup-form input[type="email"] {
     flex: 1;
+    min-width: 0;
+    min-height: 48px;
     padding: var(--space-sm);
     font-size: 1rem;
     font-family: var(--font-family);
@@ -149,6 +199,7 @@ body {
 }
 
 .signup-form button {
+    min-height: 48px;
     padding: var(--space-sm) var(--space-md);
     font-size: 1rem;
     font-family: var(--font-family);
@@ -186,7 +237,7 @@ body {
 }
 
 .philosophy h2 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: var(--space-xl);
@@ -243,6 +294,7 @@ body {
 
 .team-link {
     display: inline-block;
+    min-height: 44px;
     font-size: 1rem;
     font-weight: 500;
     color: var(--color-action-primary);
@@ -287,9 +339,14 @@ body {
 .footer-links {
     display: flex;
     gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-links a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
     font-size: 0.875rem;
     color: var(--color-text-secondary);
     text-decoration: none;
@@ -326,11 +383,14 @@ body {
 }
 
 .brand-link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-action-primary);
     text-decoration: none;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
 }
 
 .brand-link:hover {
@@ -345,7 +405,7 @@ body {
 }
 
 .content-page h1 {
-    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--color-text-primary);
     margin-bottom: var(--space-xs);
@@ -418,6 +478,24 @@ body {
 
 .highlight-section h2 {
     margin-top: 0;
+}
+
+@media (max-width: 640px) {
+    .brand {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1.25rem;
+    }
+
+    .philosophy h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-page h1 {
+        font-size: 2rem;
+    }
 }
 
 /* --------------------------------------------------------------------------
