@@ -83,7 +83,7 @@ h2,
 h3 {
     font-family: var(--font-display);
     font-optical-sizing: auto;
-    font-weight: 720;
+    font-weight: 550;
     line-height: 1.02;
     letter-spacing: 0;
 }
