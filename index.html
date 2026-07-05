@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tendi is a private iPhone and Apple Watch mood journal for quick check-ins and smart insights with no streaks or guilt.">
     <meta name="theme-color" content="#F7F0E4">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Tendi: Mood Journal - Mood tracking without streaks.</title>
     <link rel="canonical" href="https://tendijournal.app/">
     <meta property="og:type" content="website">
@@ -39,7 +40,7 @@
             <a href="#inside">Inside the app</a>
             <a href="privacy.html">Privacy</a>
             <a href="https://feedback.tendijournal.app">Feedback</a>
-            <a href="mailto:hello@twodesks.app">Support</a>
+            <span data-email-user="hello" data-email-domain="twodesks.app" data-email-text="Support" data-email-label="Email Tendi support">Support</span>
             <a class="nav-cta" href="#join">Join the list</a>
         </nav>
     </header>
@@ -54,7 +55,7 @@
                     Check in with one mood, look back through your Month Map or Journal when you want context, and read observations about what your entries can actually show.
                 </p>
 
-                <form class="waitlist-form" action="https://buttondown.com/api/emails/embed-subscribe/tendi" method="post" target="popupwindow">
+                <form class="waitlist-form" action="https://buttondown.com/api/emails/embed-subscribe/tendi" method="post" target="popupwindow" rel="noopener noreferrer">
                     <label class="visually-hidden" for="hero-email">Email address for Tendi launch updates</label>
                     <input id="hero-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="hero-email-note">
                     <button type="submit">Notify me at launch</button>
@@ -265,7 +266,7 @@
                     <h2 id="join-title">Launching summer 2026. Be the first to start your journal.</h2>
                 </div>
                 <div class="closing-form-wrap">
-                    <form class="waitlist-form" action="https://buttondown.com/api/emails/embed-subscribe/tendi" method="post" target="popupwindow">
+                    <form class="waitlist-form" action="https://buttondown.com/api/emails/embed-subscribe/tendi" method="post" target="popupwindow" rel="noopener noreferrer">
                         <label class="visually-hidden" for="closing-email">Email address for Tendi launch updates</label>
                         <input id="closing-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="closing-email-note">
                         <button type="submit">Join the list</button>
@@ -282,7 +283,7 @@
             <nav class="footer-links" aria-label="Footer">
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="https://feedback.tendijournal.app">Feedback</a>
-                <a href="mailto:hello@twodesks.app">Contact</a>
+                <span data-email-user="hello" data-email-domain="twodesks.app" data-email-text="Contact" data-email-label="Email Two Desks">Contact</span>
                 <a href="https://twodesks.app">Two Desks</a>
             </nav>
         </div>
@@ -291,27 +292,6 @@
         </p>
     </footer>
 
-    <script>
-        (() => {
-            const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-            if (reduceMotion || !("IntersectionObserver" in window)) {
-                return;
-            }
-
-            document.documentElement.classList.add("reveal-enabled");
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("is-visible");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { rootMargin: "0px 0px -10% 0px", threshold: 0.1 });
-
-            document.querySelectorAll(".reveal").forEach((element) => {
-                observer.observe(element);
-            });
-        })();
-    </script>
+    <script src="assets/site.js" defer></script>
 </body>
 </html>

@@ -178,7 +178,8 @@ h3 {
     gap: 4px;
 }
 
-.site-nav a {
+.site-nav a,
+.site-nav span[data-email-user] {
     min-height: 44px;
     display: inline-flex;
     align-items: center;
@@ -191,7 +192,8 @@ h3 {
     text-decoration: none;
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav span[data-email-user]:hover {
     color: var(--ink);
     background: rgba(234, 220, 200, 0.42);
 }
@@ -811,7 +813,8 @@ h3 {
     justify-content: flex-end;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-links span[data-email-user] {
     min-height: 44px;
     display: inline-flex;
     align-items: center;
@@ -998,7 +1001,8 @@ h3 {
         gap: 2px;
     }
 
-    .site-nav a {
+    .site-nav a,
+    .site-nav span[data-email-user] {
         min-height: 44px;
         padding-inline: 9px;
         font-size: 0.88rem;
