@@ -9,7 +9,7 @@ Tendi is a self-reflection and journaling tool. It is not intended to diagnose, 
 ## Primary Pages
 
 - [Tendi homepage](https://tendijournal.app/): Product overview, launch list, feature summary, support links, and privacy positioning.
-- [Tendi privacy policy](https://tendijournal.app/privacy.html): Full privacy details covering local storage, optional iCloud sync, HealthKit, optional analytics, Buttondown launch emails, support email, and Cloudflare hosting/security processing.
+- [Tendi privacy policy](https://tendijournal.app/privacy.html): Full privacy details covering local storage, optional iCloud sync, HealthKit, optional analytics, user-initiated Find a Helpline crisis resource links, Buttondown launch emails, support email, and Cloudflare hosting/security processing.
 
 ## Related Sites
 
