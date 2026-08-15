@@ -2,7 +2,7 @@
 
 > Tendi is a private mood journal for iPhone and Apple Watch from Two Desks. It is designed for quick check-ins, useful journal history, and modest insights without streak pressure.
 
-Tendi is planned for summer 2026 and is free, with no subscriptions or ads. The app is local-first: journal entries, notes, photos, voice notes, HealthKit-derived insights, and local insights stay on the user's device by default. If iCloud sync is enabled, data syncs through the user's personal Apple iCloud account, not through Tendi journal servers.
+Tendi is planned for autumn 2026 and is free, with no subscriptions or ads. The app is local-first: journal entries, notes, photos, voice notes, HealthKit-derived insights, and local insights stay on the user's device by default. If iCloud sync is enabled, data syncs through the user's personal Apple iCloud account, not through Tendi journal servers.
 
 Tendi is a self-reflection and journaling tool. It is not intended to diagnose, treat, cure, or prevent any disease or mental health condition.
 

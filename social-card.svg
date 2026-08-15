@@ -21,7 +21,7 @@
 
   <image href="assets/app-icon.png" x="142" y="132" width="72" height="72" preserveAspectRatio="xMidYMid slice"/>
   <text x="232" y="180" fill="#211716" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="42" font-weight="800">Tendi</text>
-  <text x="142" y="278" fill="#41664A" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="24" font-weight="800">Launching summer 2026 · Free</text>
+  <text x="142" y="278" fill="#41664A" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="24" font-weight="800">Launching autumn 2026 · Free</text>
   <text x="142" y="354" fill="#211716" font-family="Georgia, serif" font-size="74" font-weight="700">Mood tracking</text>
   <text x="142" y="432" fill="#211716" font-family="Georgia, serif" font-size="74" font-weight="700">without streaks.</text>
   <text x="142" y="495" fill="#594C47" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="26">Private mood journal for iPhone + Apple Watch.</text>
