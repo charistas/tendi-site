@@ -1,6 +1,7 @@
 include:
   - ".well-known"
 exclude:
+  - ".site-root-marker"
   - ".cache"
   - ".cursor"
   - ".github"

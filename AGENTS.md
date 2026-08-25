@@ -10,8 +10,10 @@
 
 ## Product Truth
 
-- Tendi is a private mood journal for iPhone and Apple Watch from Two Desks.
-- Current positioning: mood-first check-ins, practical journal history, Month Map, Year Map, Herbarium, gentle insights, optional iCloud sync, optional HealthKit, optional analytics, and no account requirement.
+- Tendi is a mood journal for iPhone and Apple Watch from Two Desks.
+- The public promise is: Check in with one mood. Your entries build a record, and Tendi is honest about what that record can actually show.
+- Its clause order is fixed as capture, then accumulated record, then honest interpretation; no surface may reorder it.
+- Supporting product details include mood-first check-ins, practical journal history, Month Map, Year Map, Herbarium, optional iCloud sync, optional HealthKit, optional analytics, and no account requirement.
 - The app code and canonical app docs live in `/Users/charistas/Dev/tendi`.
 - Start with `/Users/charistas/Dev/tendi/docs/README.md` when site copy depends on current app behavior.
 
@@ -19,7 +21,7 @@
 
 - Do not reintroduce retired Bloomery, Classic Garden, Mind Garden, Past Gardens/Terrarium, Mossbear, or procedural Garden positioning.
 - Current visual archive language is Month Map, Year Map, and Journal-owned Herbarium.
-- Mood tracking must avoid streak pressure, guilt, or punitive missed-day framing.
+- Check-in language must avoid streak pressure, guilt, or punitive missed-day framing.
 - Tendi is a self-reflection and journaling tool, not a medical, diagnostic, therapy, medication, or crisis-response product.
 - The website launch forms submit to Buttondown. Journal content is never sent to Buttondown.
 - The website source does not include client-side analytics scripts. Do not claim Cloudflare Web Analytics is active unless it is intentionally enabled and the privacy policy is updated.
@@ -71,6 +73,10 @@ The browser check starts a local static server, runs desktop `1280x900` and mobi
 - Keep `_config.yml` excluding agent, test, and tooling files from GitHub Pages while including `.well-known`; do not re-add `.nojekyll` unless Pages deployment moves off repository-root publishing.
 - Keep `social-card.png` at `1200x630` when regenerating it.
 - Keep Cloudflare notes in `cloudflare-security.md` current if DNS, headers, CSP, or Cloudflare injection behavior changes.
+
+### Public Claim Ceiling
+
+Before changing public positioning or product claims, read `/Users/charistas/Dev/tendi/docs/03-design/content-guidelines.md` §Public Positioning Copy. The site-specific enforced boundary is `site.config.json` `claimFamilies`; update public copy and its contract tests together, and treat any exemption as an explicit reviewed ledger entry.
 
 ## Cloudflare Gotchas
 

@@ -1,14 +1,14 @@
 # Tendi
 
-> Tendi is a private mood journal for iPhone and Apple Watch from Two Desks. It is designed for quick check-ins, useful journal history, and modest insights without streak pressure.
+> Tendi is a mood journal for iPhone and Apple Watch from Two Desks. Check in with one mood. Your entries build a record, and Tendi is honest about what that record can actually show.
 
-Tendi is planned for autumn 2026 and is free, with no subscriptions or ads. The app is local-first: journal entries, notes, photos, voice notes, HealthKit-derived insights, and local insights stay on the user's device by default. If iCloud sync is enabled, data syncs through the user's personal Apple iCloud account, not through Tendi journal servers.
+Tendi is planned for autumn 2026 and version 1.0 launches free, with no ads, subscriptions, or in-app purchases. No Tendi account is required, and there are no streaks, catching up, or deficit counters. The app is local-first: journal entries, notes, photos, recordings and their on-device transcripts, and locally computed insights stay on the user's device by default. If iCloud sync is enabled, data syncs through the user's personal Apple iCloud account, not through Tendi journal servers.
 
 Tendi is a self-reflection and journaling tool. It is not intended to diagnose, treat, cure, or prevent any disease or mental health condition.
 
 ## Primary Pages
 
-- [Tendi homepage](https://tendijournal.app/): Product overview, launch list, feature summary, support links, and privacy positioning.
+- [Tendi homepage](https://tendijournal.app/): Product overview, the public promise, launch list, feature summary, support links, and privacy positioning.
 - [Tendi privacy policy](https://tendijournal.app/privacy.html): Full privacy details covering local storage, optional iCloud sync, HealthKit, Journaling Suggestions, optional analytics, widget and Watch summaries, Fider public-feedback processing, support/privacy contact routing, user-initiated Find a Helpline crisis resource links, Buttondown launch emails, the outbound Buy Me a Coffee support link, and Cloudflare hosting/security processing.
 - [Tendi support](https://tendijournal.app/support.html): Contact information, practical app and data answers, feedback and bug-reporting paths, privacy information, and crisis-support resources.
 

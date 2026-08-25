@@ -6,7 +6,7 @@ Static GitHub Pages site for [tendijournal.app](https://tendijournal.app), the p
 
 The site should communicate the current Tendi product:
 
-- Mood journaling without streaks, guilt, or missed-day pressure.
+- Check in with one mood. Your entries build a record, and Tendi is honest about what that record can actually show.
 - Quick check-ins, practical journal history, Month Map, Year Map, Herbarium, and careful insights.
 - Local-first privacy, no account requirement, optional iCloud sync, optional analytics, and no journal-content server access.
 - Support and privacy information for App Store review and users.
@@ -77,9 +77,21 @@ pyftsubset /private/tmp/Fraunces-variable.ttf \
   --unicodes='U+000D,U+0020-007E,U+00A0-00FF,U+2010-2015,U+2018-201D,U+2022,U+2026,U+2192,U+2212'
 ```
 
+### Social Card
+
+Regenerate `social-card.png` from `social-card.svg` with the repository's pinned Playwright Chromium:
+
+```bash
+npm run card
+```
+
+The renderer owns its local server, waits for the bundled Fraunces font and raster assets, asserts a `1200x630` PNG, and prints the PNG digest, Chromium revision, and browser version recorded in `site.config.json`. The digest is a change-detection control for the pinned browser and font, not a cryptographic reproducibility claim: a Playwright browser upgrade can change antialiasing, so re-render and re-pin the digest and browser identity together in the same commit.
+
 ### Screenshot WebP Variants
 
 The PNG screenshots remain as `<picture>` fallbacks. Current source PNGs are 424 x 920 simulator captures.
+
+The current PNGs predate `tendi#88`; a refresh from the app repository's `visual` lane is pending.
 
 ```bash
 cwebp -quiet -q 82 assets/screenshot-home.png -o assets/screenshot-home.webp

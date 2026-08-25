@@ -5,8 +5,9 @@ const port = Number(process.env.PORT || site.previewPort);
 
 module.exports = defineConfig({
   testDir: "./tests",
+  globalSetup: require.resolve("./tests/global-setup.js"),
   timeout: 30000,
-  outputDir: "test-results",
+  outputDir: "test-results/playwright",
   reporter: process.env.CI
     ? [["list"], ["html", { open: "never" }]]
     : [["list"]],
@@ -18,7 +19,7 @@ module.exports = defineConfig({
   webServer: {
     command: `python3 -m http.server ${port}`,
     url: `http://127.0.0.1:${port}`,
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: !process.env.CI && !process.env.TENDI_SITE_STRICT_SERVER,
     stdout: "pipe",
     stderr: "pipe"
   },

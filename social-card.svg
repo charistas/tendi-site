@@ -20,11 +20,11 @@
   <rect x="956" y="112" width="184" height="399" rx="31" stroke="#FFFAF2" stroke-opacity="0.2" stroke-width="1"/>
 
   <image href="assets/app-icon.png" x="142" y="132" width="72" height="72" preserveAspectRatio="xMidYMid slice"/>
-  <text x="232" y="180" fill="#211716" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="42" font-weight="800">Tendi</text>
-  <text x="142" y="278" fill="#41664A" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="24" font-weight="800">Launching autumn 2026 · Free</text>
-  <text x="142" y="354" fill="#211716" font-family="Georgia, serif" font-size="74" font-weight="700">Mood tracking</text>
-  <text x="142" y="432" fill="#211716" font-family="Georgia, serif" font-size="74" font-weight="700">without streaks.</text>
-  <text x="142" y="495" fill="#594C47" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="26">Private mood journal for iPhone + Apple Watch.</text>
-  <circle cx="150" cy="538" r="5" fill="#41664A"/>
-  <text x="170" y="548" fill="#41664A" font-family="-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="26" font-weight="800">No account required</text>
+  <text x="232" y="180" fill="#211716" font-family="Fraunces, 'Iowan Old Style', Palatino, Georgia, serif" font-size="42" font-weight="700">Tendi</text>
+  <text x="142" y="278" fill="#41664A" font-family="Fraunces, 'Iowan Old Style', Palatino, Georgia, serif" font-size="24" font-weight="800">Launching autumn 2026 · Free at launch</text>
+  <text x="142" y="354" fill="#211716" font-family="Fraunces, 'Iowan Old Style', Palatino, Georgia, serif" font-size="74" font-weight="700">Check in with</text>
+  <text x="142" y="432" fill="#211716" font-family="Fraunces, 'Iowan Old Style', Palatino, Georgia, serif" font-size="74" font-weight="700">one mood.</text>
+  <text x="142" y="486" fill="#594C47" font-family="Fraunces, 'Iowan Old Style', Palatino, Georgia, serif" font-size="22"><tspan x="142">Your entries build a record.</tspan><tspan x="142" dy="29"> A private mood journal for iPhone + Apple Watch.</tspan></text>
+  <circle cx="150" cy="533" r="5" fill="#41664A"/>
+  <text x="170" y="543" fill="#41664A" font-family="Fraunces, 'Iowan Old Style', Palatino, Georgia, serif" font-size="26" font-weight="800">No account required</text>
 </svg>

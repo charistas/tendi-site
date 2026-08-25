@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "scripts": {
     "install:browsers": "playwright install chromium",
+    "card": "node tools/render_social_card.mjs",
     "verify": "python3 tools/verify_static_site.py",
-    "test:browser": "playwright test",
+    "test:browser": "node tests/server-integrity-regression.mjs && playwright test",
     "test": "npm run verify && npm run test:browser"
   },
   "devDependencies": {

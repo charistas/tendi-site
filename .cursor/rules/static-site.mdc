@@ -3,4 +3,4 @@ description: Static site workflow for tendijournal.app
 alwaysApply: true
 ---
 
-Follow `AGENTS.md`. Keep this repository plain static HTML/CSS/JS, run `npm run install:browsers` once on a fresh clone before browser tests, run `npm test` before handoff, and do not reintroduce Bloomery, Classic Garden, Mind Garden, Past Gardens/Terrarium, Mossbear, or procedural Garden positioning.
+Follow `AGENTS.md`. Keep this repository plain static HTML/CSS/JS, run `npm run install:browsers` once on a fresh clone before browser tests, run `npm test` before handoff, and do not reintroduce Bloomery, Classic Garden, Mind Garden, Past Gardens/Terrarium, Mossbear, or procedural Garden positioning. For public positioning or product claims, follow `/Users/charistas/Dev/tendi/docs/03-design/content-guidelines.md` §Public Positioning Copy and the enforced `site.config.json` `claimFamilies` ceiling.

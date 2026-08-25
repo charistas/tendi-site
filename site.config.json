@@ -26,6 +26,7 @@
   "pagesConfig": {
     "requiredIncludes": [".well-known"],
     "requiredExcludes": [
+      ".site-root-marker",
       ".cache",
       ".cursor",
       ".github",
@@ -68,7 +69,9 @@
     "Past Gardens",
     "Terrarium",
     "Mossbear",
-    "procedural garden"
+    "procedural garden",
+    "mood tracker",
+    "mood tracking"
   ],
   "disallowedScriptMarkers": [
     "static.cloudflareinsights.com",
@@ -83,13 +86,21 @@
   ],
   "requiredPageText": {
     "index.html": [
-      "Mood tracking without streaks",
+      "Check in with one mood",
+      "Your entries build a record",
+      "what that record can actually show",
+      "A record that stays legible as it grows",
+      "not a cause-and-effect claim",
+      "Do I have to check in every day?",
+      "Can I get my journal out?",
       "Journal content stays off Tendi servers",
       "Month Map",
       "Herbarium",
       "Tendi is planned for autumn 2026"
     ],
     "privacy.html": [
+      "the color remains a visible mood signal",
+      "recordings and transcripts",
       "You do not need a Tendi account",
       "iCloud sync",
       "HealthKit",
@@ -104,11 +115,285 @@
       "The Tendi website does not include client-side analytics scripts"
     ],
     "support.html": [
+      "the only export format capable of a complete restore",
       "Support",
       "Frequently asked questions",
       "Privacy Policy",
       "Find a Helpline",
       "support [at] tendijournal [dot] app"
+    ]
+  },
+  "requiredConfigKeys": [
+    "claimFamilies",
+    "claimScanExtraPaths",
+    "claimScanCoverage",
+    "claimExemptions",
+    "promiseContract",
+    "comparativeClaim",
+    "prohibitedPageText",
+    "requiredPageText",
+    "metadataParity",
+    "metadataCrossPageParity",
+    "llmsAgreement",
+    "socialCard"
+  ],
+  "claimFamilies": {
+    "P": [
+      "free[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+forever",
+      "forever[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+free",
+      "always[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+free",
+      "free[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+for[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+life",
+      "permanently[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+free",
+      "never[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+charge",
+      "no[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+subscriptions[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+ever",
+      "always[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+be[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+free",
+      "free[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+in[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+perpetuity"
+    ],
+    "D1": [
+      "(?:Tendi|we|Herbarium|Month Map|Year Map|Journal|the app)\\s+(?:(?:will|can|could|may|might|must|should|would)\\s+)?(?:keeps?|holds?|preserves?|protects?|safeguards?)\\b.{0,40}(?:journal|entries|entry|data|memories)",
+      "(?:your|the)\\s+(?:journal|entries|data)\\b.{0,30}(?:is|are|stays?|remains?|will be)\\s+(?:always\\s+)?(?:safe|secure|protected|preserved|backed[- ]?up)"
+    ],
+    "D2": [
+      "never leaves? your device",
+      "can never leave",
+      "end.to.end encrypt",
+      "fully backed up",
+      "guarantee[sd]? recover",
+      "will (?:still )?be there",
+      "will keep .{0,40} available",
+      "never lose",
+      "won'?t lose",
+      "automatic(?:ally)? back(?:ed|s|up)",
+      "always available",
+      "complete (?:remote|cloud) copy"
+    ],
+    "C": [
+      "mood[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+tracker",
+      "mood.{0,3}tracking"
+    ],
+    "E": [
+      "export everything",
+      "export all (?:of )?your (?:data|entries)",
+      "(?:JSON|CSV)[^.]{0,60}(?:photo|recording)",
+      "PDF[^.]{0,60}restor"
+    ],
+    "A1": [
+      "science.backed",
+      "evidence.based",
+      "clinically proven",
+      "scientifically validated",
+      "clinically validated",
+      "trusted by millions",
+      "\\B#1\\b",
+      "\\bbest (?:mood|journal|app)\\b"
+    ],
+    "A2": [
+      "(?:Tendi|this app|we)\\s+(?:can|will|helps? (?:you )?)?\\s*(?:diagnos|treat|cure|heal|therap)",
+      "\\b(?:therapy|therapeutic|treatment|diagnosis|clinical outcome|medical advice)\\b"
+    ],
+    "A3": [
+      "\\bcauses?\\b",
+      "\\bcausal\\b",
+      "what shapes your",
+      "improves? your mood",
+      "complete (?:self.)?understanding",
+      "guarantee[sd]? (?:improvement|results)"
+    ],
+    "F": [
+      "\\bmoat\\b",
+      "copying cost",
+      "market size",
+      "willingness to pay",
+      "retention advantage",
+      "conversion rate"
+    ],
+    "V": [
+      "\\bconfidence\\b",
+      "\\breliab",
+      "\\bproof\\b",
+      "statistical significance"
+    ],
+    "G": [
+      "(?:Important Days?|marked dates?)[^.]{0,50}(?:in|into|shape|shapes|show up in|appear in|feed) (?:your )?(?:patterns|insights)",
+      "dates? that (?:show up in|shape|feed) your (?:patterns|insights)"
+    ],
+    "I": [
+      "\\bTendi(?:'s)?[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+(?:intelligence|AI)\\b"
+    ],
+    "H": [
+      "\\b(?:Apple[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+)?Health\\b.{0,16}\\bConnected\\b",
+      "\\b(?:Apple[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+)?Health(?:[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+is)?[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+set[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+up\\b"
+    ],
+    "M": [
+      "\\bjust[-\\u00ad\\u2010-\\u2015\\u2212\\u2011\\u00a0\\s]+(?:talk|write)\\b"
+    ]
+  },
+  "claimScanExtraPaths": [
+    "llms.txt",
+    "social-card.svg",
+    "favicon.svg",
+    ".well-known/security.txt",
+    "robots.txt",
+    "sitemap.xml",
+    "README.md",
+    "AGENTS.md",
+    ".github/copilot-instructions.md",
+    ".cursor/rules/static-site.mdc"
+  ],
+  "claimScanCoverage": {
+    "publishedGlobs": ["**/*.html", "**/*.txt", "**/*.svg", "**/*.md", "**/*.mdc"],
+    "exempt": [
+      {
+        "path": "assets/fonts/OFL.txt",
+        "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b",
+        "why": "verbatim third-party SIL Open Font License text; scanning it would require permanent exemptions for license prose that Tendi does not author"
+      }
+    ]
+  },
+  "claimExemptions": [
+    {
+      "path": "index.html",
+      "kind": "paragraph",
+      "unit_text": "Tendi shows patterns across the entries you saved and explains what each one is based on: the counts behind it and the exact dates it covers. When a pattern includes a comparison, that comparison is not a cause-and-effect claim, and Tendi does not diagnose you or tell you what to do next.",
+      "expected_count": 1,
+      "family": "A3",
+      "justification": "Required non-causality statement"
+    },
+    {
+      "path": "AGENTS.md",
+      "kind": "list_item",
+      "unit_text": "- Tendi is a self-reflection and journaling tool, not a medical, diagnostic, therapy, medication, or crisis-response product.",
+      "expected_count": 1,
+      "family": "A2",
+      "justification": "Explicit prohibition statement in contributor guidance; it must name what it forbids. Mirrors the app contract's own AGENTS.md exemptions."
+    }
+  ],
+  "promiseContract": {
+    "index.html": {
+      "captureSelector": "#hero-title",
+      "capture": "Check in with one mood.",
+      "ledeSelector": ".hero-lede",
+      "record": "Your entries build a record",
+      "interpretation": "Tendi is honest about what that record can actually show",
+      "promiseVerbatim": "Check in with one mood. Your entries build a record, and Tendi is honest about what that record can actually show.",
+      "supportContracts": [
+        {
+          "name": "record-support",
+          "selector": "#record-support",
+          "mustContain": [
+            "A single mood is enough",
+            "Save stays explicit",
+            "Days without entries stay just that, not failures",
+            "Coming back after a break is just coming back"
+          ]
+        },
+        {
+          "name": "daily-faq-answer",
+          "selector": "#daily-faq-answer",
+          "mustContain": [
+            "No.",
+            "There are no streaks",
+            "no catching up",
+            "no deficit counters",
+            "Days without entries stay just that, not failures"
+          ]
+        },
+        {
+          "name": "export-faq-answer",
+          "selector": "#export-faq-answer",
+          "mustContain": [
+            "A full Tendi backup is designed for restoring your journal into Tendi",
+            "JSON and CSV carry entries for use elsewhere",
+            "PDF is a readable report rather than a backup",
+            "Export and restore need no payment and no account"
+          ]
+        }
+      ]
+    }
+  },
+  "comparativeClaim": {
+    "index.html": {
+      "selector": ".feature-flow article.feature-row:nth-of-type(3) .feature-copy p:not(.flow-step)",
+      "mustContain": [
+        "explains what each one is based on",
+        "When a pattern includes a comparison",
+        "not a cause-and-effect claim"
+      ],
+      "mustNotContain": ["every pattern", "with and without", "each pattern"],
+      "exclusivePatterns": [
+        "(?:comparative|comparisons?|patterns?).{0,100}(?:counts?|exact dates?|date ranges?|evidence)",
+        "(?:counts?|exact dates?|date ranges?|evidence).{0,100}(?:comparative|comparisons?|patterns?)"
+      ]
+    }
+  },
+  "prohibitedPageText": {
+    "index.html": [
+      "Mood tracking without streaks",
+      "Your journal will still be there",
+      "smart insights",
+      "Tendi is free."
+    ],
+    "support.html": ["Tendi is free,"]
+  },
+  "metadataParity": {
+    "titleKeys": ["og:title", "twitter:title"],
+    "descriptionKeys": ["og:description", "twitter:description"],
+    "imageKeys": ["og:image", "twitter:image"],
+    "imageAltKeys": ["og:image:alt", "twitter:image:alt"],
+    "sharedImageAltAcrossPages": true,
+    "canonicalByPage": {
+      "index.html": {
+        "title": "Tendi: Mood Journal - Check in with one mood.",
+        "description": "Check in with one mood. Your entries build a record, and Tendi is honest about what that record can actually show. No streaks. No account required.",
+        "canonical": "https://tendijournal.app/"
+      },
+      "privacy.html": {
+        "title": "Privacy Policy - Tendi",
+        "description": "How Tendi stores journal content on your device, what can sync through iCloud, and what never goes to Tendi servers.",
+        "canonical": "https://tendijournal.app/privacy.html"
+      },
+      "support.html": {
+        "title": "Support - Tendi",
+        "description": "Get help with Tendi, find answers to common questions, report a problem, or contact the Tendi support team.",
+        "canonical": "https://tendijournal.app/support.html"
+      }
+    }
+  },
+  "metadataCrossPageParity": {
+    "altKeys": ["og:image:alt", "twitter:image:alt"],
+    "pages": ["index.html", "privacy.html", "support.html"]
+  },
+  "llmsAgreement": {
+    "mustContainVerbatim": [
+      "Check in with one mood. Your entries build a record, and Tendi is honest about what that record can actually show.",
+      "mood journal",
+      "Tendi is a self-reflection and journaling tool. It is not intended to diagnose, treat, cure, or prevent any disease or mental health condition."
+    ],
+    "urlsMustAppearInSitemap": true,
+    "sitemapPath": "sitemap.xml"
+  },
+  "socialCard": {
+    "width": 1200,
+    "height": 630,
+    "version": "20260824",
+    "pngSha256": "d8557790ce5672df6bdc2771c6990c2b81e594c62c37cc8a1e2b085c92489211",
+    "chromiumRevision": "1228",
+    "browserVersion": "149.0.7827.55",
+    "inputSha256": {
+      "social-card.svg": "df29e8de74b264f09131cc54465a9527eb5307634172731d2eb6b0d04cea3e1c",
+      "assets/app-icon.png": "f9501562ec589399ec95a9bd6d2d8a764e48d1eaabb31299850f650117d12e84",
+      "assets/screenshot-home.png": "5c6f9d0b02d2ab78cfe7cbd286c9dcb74369077b433531ab5d1f777e139a8a6a",
+      "assets/screenshot-insights.png": "25e221ed965db1b0c5769d8e3717e599f81f952a0b4fe0b9fec0d75626c36ab4",
+      "assets/fonts/Fraunces-opsz-wght-latin.woff2": "c5249733cadca6f1ecbdf833b0353d42ea108a615d0b40ec943d644c871b4a47",
+      "tools/render_social_card.mjs": "7a1a533724b9e9dd35143e118f260cb194f2f2016b41f8b4b9a5e96a37e4dae7"
+    },
+    "expectedSvgText": [
+      "Tendi",
+      "Launching autumn 2026 · Free at launch",
+      "Check in with",
+      "one mood.",
+      "Your entries build a record. A private mood journal for iPhone + Apple Watch.",
+      "No account required"
     ]
   }
 }
