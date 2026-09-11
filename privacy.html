@@ -37,7 +37,13 @@
 
     <main class="content-page" id="main">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: August 24, 2026</p>
+        <p class="last-updated">Last updated: September 11, 2026</p>
+
+        <section class="content-section highlight-section" data-capture="version-notice">
+            <h2>Version notice</h2>
+            <p><strong>Privacy changes prepared for Tendi 1.0 (13), not yet distributed.</strong></p>
+            <p>The current-version policy remains in effect. The <a href="#tendi-1-0-13-privacy">prepared changes section</a> describes the build 13 candidate only; it does not mean TestFlight build 12 or older installations have gained those consent, cache-filtering, or warning protections.</p>
+        </section>
 
         <section class="content-section highlight-section" data-capture="the-short-version">
             <h2>The short version</h2>
@@ -84,6 +90,23 @@
             <h2>Optional analytics</h2>
             <p>Tendi uses TelemetryDeck for optional app analytics. Analytics are off by default. If you enable them, Tendi may send categorical product-interaction events and a random, resettable app analytics identifier so we can understand which app areas are used and whether errors occur.</p>
             <p>Analytics events do not include journal text, mood notes, photos, voice recordings, HealthKit samples, email addresses, precise location, or advertising identifiers. Analytics are not used for tracking or advertising.</p>
+        </section>
+
+        <section class="content-section" id="tendi-1-0-13-privacy" data-capture="tendi-1-0-13-privacy">
+            <h2>Prepared changes for Tendi 1.0 (13)</h2>
+            <p><strong>This section is prospective.</strong> It describes the locally verified build 13 candidate, which has not been uploaded or distributed. The current-version policy above remains applicable until a matching build is distributed.</p>
+            <p>In Tendi 1.0 (13), analytics are optional and off by default. They measure permitted app interactions and technical operation. They do not send journal text, photos, recordings or HealthKit samples.</p>
+            <p>Tendi 1.0 (13) uses TelemetryDeck for optional app-use and technical-operation measurements. You can use Tendi without enabling analytics. You can change your choice using the existing control in Settings or onboarding.</p>
+            <p>If you enable analytics, Tendi may send event names and coarse information about app navigation, completed check-ins, whether details were added, insight use, reminders, imports and exports, and technical outcomes. Some events include bounded counts or durations. They also carry random session identifiers, event times, app version and build, operating-system and platform information, distribution context, and the analytics SDK version. A random, resettable installation identifier is hashed before transmission and allows events to be associated over time. It is not your email address, an account ID or an advertising identifier. Hashing alone does not make every event anonymous.</p>
+            <p>Hide and Restore analytics record submitted actions without the insight category or subject. These counts do not confirm that the requested change was saved.</p>
+            <p>The app does not send journal text, selected mood or emotion values, activity names, search text, photos, recordings, transcripts, HealthKit samples, health measurements, cycle dates, or precise locations in these analytics payloads. Tendi does not use analytics for advertising or sell analytics data.</p>
+            <p>Analytics require a valid saved consent record for this installation. An old enabled setting by itself does not enable analytics. If no valid record exists, analytics stay off until you explicitly opt in; no additional prompt is forced. Valid current choices are preserved. Importing a Tendi backup preserves the current local analytics choice, including an opt-out, regardless of the backup's analytics setting.</p>
+            <p>Turning analytics off immediately blocks new analytics transmissions controlled by Tendi in the current session. When that choice is successfully saved, previously queued events become ineligible for transmission, including after restart or a later opt-in. If Tendi cannot save your choice, it displays a warning and a retry control. Transmissions remain blocked in that session, but the previous saved choice may return after restart. The warning remains when leaving onboarding or reopening Settings, and clears only after a successful save. Please retry before closing the app.</p>
+            <p>A request already released to the network may still complete. Turning analytics off prevents subsequent retries of withdrawn events; it cannot retract an earlier transmission. Turning analytics off or resetting the analytics identifier does not erase analytics already held by TelemetryDeck.</p>
+            <p>This version suppresses health and cycle setting and authorization events, health and cycle insight-category interactions, Health-history processing diagnostics, wellbeing-offer actions, breathing and grounding usage events, and crisis-resource-open events. It also suppresses the shared context-opening event in Week Review and the pattern library, including group routes. Matching events queued by an earlier version are excluded before dispatch, while permitted events in the same batch remain eligible subject to consent. General navigation, permitted insight use and journal-workflow events remain optional; they may still reveal app-use context.</p>
+            <p>HealthKit sample values and the local health-summary cache are not included in analytics payloads. Apple Health access and analytics consent are separate choices.</p>
+            <p>TelemetryDeck describes additional server-side hashing, rounding stored event times to the nearest hour and not storing incoming IP addresses for app analytics. We rely on its published <a href="https://telemetrydeck.com/docs/articles/anonymization-how-it-works/">technical description</a> and <a href="https://telemetrydeck.com/docs/guides/privacy-faq/">privacy FAQ</a> for those service-side practices. Events can still be associated through analytics and session identifiers. We do not join these analytics to identifiable support or customer records.</p>
+            <p>TelemetryDeck does not guarantee a deadline for deleting analytics in cold storage and says analytics may remain after we close our publisher account. We therefore do not promise a fixed analytics-deletion period. Disabling analytics or resetting its identifier in Tendi does not request deletion of data already held by TelemetryDeck. We cannot promise that historical analytics can be identified as yours or deleted individually. For privacy questions, contact <span data-email-user="hello" data-email-domain="twodesks.app">hello [at] twodesks [dot] app</span>.</p>
         </section>
 
         <section class="content-section" data-capture="this-website">
