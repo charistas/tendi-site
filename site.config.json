@@ -114,8 +114,9 @@
       "Buttondown",
       "Buy Me a Coffee",
       "Find a Helpline",
-      "Privacy changes in Tendi 1.0 (13), currently available through internal TestFlight.",
-      "TestFlight build 12 or older installations",
+      "Privacy behavior in Tendi 1.0 (17), currently available through internal TestFlight",
+      "TestFlight build 16 or older installations",
+      "Optional on-device AI",
       "If Tendi cannot save your choice, it displays a warning and a retry control.",
       "TelemetryDeck does not guarantee a deadline for deleting analytics in cold storage",
       "The Tendi website does not include client-side analytics scripts"
