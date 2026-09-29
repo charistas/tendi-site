@@ -14,8 +14,8 @@
 - The public promise is: Check in with one mood. Your entries build a record, and Tendi is honest about what that record can actually show.
 - Its clause order is fixed as capture, then accumulated record, then honest interpretation; no surface may reorder it.
 - Supporting product details include mood-first check-ins, practical journal history, Month Map, Year Map, Herbarium, optional iCloud sync, optional HealthKit, optional analytics, and no account requirement.
-- The app code and canonical app docs live in `/Users/charistas/Dev/tendi`.
-- Start with `/Users/charistas/Dev/tendi/docs/README.md` when site copy depends on current app behavior.
+- The expected app checkout is `../../tendi/` relative to this site; use a user-provided alternate location if needed. If it is unavailable, report the source gap before changing dependent claims.
+- Start with the app checkout's `docs/README.md` when site copy depends on current app behavior.
 
 ## Product And Privacy Constraints
 
@@ -47,7 +47,7 @@ Open `http://localhost:8000`.
 
 ## Verification
 
-Install dependencies with `npm ci` after cloning or when `package-lock.json` changes.
+Install dependencies after cloning or when `package-lock.json` changes. On this laptop use `socket npm ci` and route any nested registry operations through Socket; never bypass a blocked scan. On other machines, follow the approved supply-chain policy for the exact-lockfile install. Checked-in `npm run` scripts using local tools remain valid.
 Install Playwright's Chromium browser with `npm run install:browsers` before the first browser test run on a fresh machine.
 
 Run the full local gate before handoff:
@@ -69,14 +69,14 @@ The browser check starts a local static server, runs desktop `1280x900` and mobi
 
 - Keep the site static; do not add React, Vite, Tailwind, or a bundler.
 - Keep page metadata aligned across canonical URL, Open Graph, Twitter tags, `sitemap.xml`, `robots.txt`, and `llms.txt`.
-- If public app behavior or privacy copy changes, cross-check `/Users/charistas/Dev/tendi/docs/04-technical/app-store-privacy.md` and the current source behavior.
+- If public app behavior or privacy copy changes, cross-check the app checkout's `docs/04-technical/app-store-privacy.md` and the current source behavior.
 - Keep `_config.yml` excluding agent, test, and tooling files from GitHub Pages while including `.well-known`; do not re-add `.nojekyll` unless Pages deployment moves off repository-root publishing.
 - Keep `social-card.png` at `1200x630` when regenerating it.
 - Keep Cloudflare notes in `cloudflare-security.md` current if DNS, headers, CSP, or Cloudflare injection behavior changes.
 
 ### Public Claim Ceiling
 
-Before changing public positioning or product claims, read `/Users/charistas/Dev/tendi/docs/03-design/content-guidelines.md` §Public Positioning Copy. The site-specific enforced boundary is `site.config.json` `claimFamilies`; update public copy and its contract tests together, and treat any exemption as an explicit reviewed ledger entry.
+Before changing public positioning or product claims, read the app checkout's `docs/03-design/content-guidelines.md` §Public Positioning Copy. The site-specific enforced boundary is `site.config.json` `claimFamilies`; update public copy and its contract tests together, and treat any exemption as an explicit reviewed ledger entry.
 
 ## Cloudflare Gotchas
 
