@@ -4,7 +4,7 @@
 
 - Static GitHub Pages site for `https://tendijournal.app`.
 - Purpose: public launch, support, privacy, and App Store review site for Tendi.
-- Pages: `index.html`, `privacy.html`, `support.html`, `.well-known/security.txt`, `llms.txt`, `robots.txt`, `sitemap.xml`.
+- Pages: `index.html`, `privacy.html`, `support.html`, `how-tendi-works.html`, `.well-known/security.txt`, `llms.txt`, `robots.txt`, `sitemap.xml`.
 - Runtime code is plain HTML, CSS, and a small `assets/site.js` helper for email-link generation, current year text, and reveal animations.
 - Deployment is GitHub Pages behind Cloudflare with custom domain `tendijournal.app`.
 

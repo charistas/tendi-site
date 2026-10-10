@@ -2,14 +2,15 @@
   "siteName": "Tendi",
   "domain": "https://tendijournal.app",
   "previewPort": 8000,
-  "pages": ["index.html", "privacy.html", "support.html"],
-  "sitemapPaths": ["/", "/privacy.html", "/support.html", "/.well-known/security.txt"],
+  "pages": ["index.html", "privacy.html", "support.html", "how-tendi-works.html"],
+  "sitemapPaths": ["/", "/privacy.html", "/support.html", "/how-tendi-works.html", "/.well-known/security.txt"],
   "requiredFiles": [
     "CNAME",
     "README.md",
     "index.html",
     "privacy.html",
     "support.html",
+    "how-tendi-works.html",
     "styles.css",
     "assets/site.js",
     "assets/app-icon.png",
@@ -55,14 +56,16 @@
     "https://telemetrydeck.com/docs/guides/privacy-faq/",
     "https://findahelpline.com",
     "https://buymeacoffee.com/twodesks",
-    "https://twodesks.app"
+    "https://twodesks.app",
+    "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
   ],
   "allowedFormActions": ["https://buttondown.com/api/emails/embed-subscribe/tendi"],
   "requiredMailtoLinks": ["hello@twodesks.app", "support@tendijournal.app"],
   "requiredPageMailtoLinks": {
     "index.html": ["hello@twodesks.app"],
     "privacy.html": ["hello@twodesks.app", "support@tendijournal.app"],
-    "support.html": ["support@tendijournal.app"]
+    "support.html": ["support@tendijournal.app"],
+    "how-tendi-works.html": ["support@tendijournal.app", "hello@twodesks.app"]
   },
   "bannedPublicTerms": [
     "Bloomery",
@@ -128,6 +131,14 @@
       "Privacy Policy",
       "Find a Helpline",
       "support [at] tendijournal [dot] app"
+    ],
+    "how-tendi-works.html": [
+      "A plain-language guide. Last updated: October 10, 2026.",
+      "It is not a legal agreement.",
+      "Your entries build a record you can read, search and take with you.",
+      "They are context for you, not an input to Insights.",
+      "Export, import and restore need no payment and no account.",
+      "Apple's standard End User Licence Agreement"
     ]
   },
   "requiredConfigKeys": [
@@ -363,12 +374,17 @@
         "title": "Support - Tendi",
         "description": "Get help with Tendi, find answers to common questions, report a problem, or contact the Tendi support team.",
         "canonical": "https://tendijournal.app/support.html"
+      },
+      "how-tendi-works.html": {
+        "title": "How Tendi works - Tendi",
+        "description": "A plain-language guide to what Tendi does, where your journal lives, what you can take out, and what Tendi will not claim.",
+        "canonical": "https://tendijournal.app/how-tendi-works.html"
       }
     }
   },
   "metadataCrossPageParity": {
     "altKeys": ["og:image:alt", "twitter:image:alt"],
-    "pages": ["index.html", "privacy.html", "support.html"]
+    "pages": ["index.html", "privacy.html", "support.html", "how-tendi-works.html"]
   },
   "llmsAgreement": {
     "mustContainVerbatim": [

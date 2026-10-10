@@ -59,6 +59,11 @@ EXPECTED_CANONICAL_METADATA = {
         "description": "Get help with Tendi, find answers to common questions, report a problem, or contact the Tendi support team.",
         "canonical": "https://tendijournal.app/support.html",
     },
+    "how-tendi-works.html": {
+        "title": "How Tendi works - Tendi",
+        "description": "A plain-language guide to what Tendi does, where your journal lives, what you can take out, and what Tendi will not claim.",
+        "canonical": "https://tendijournal.app/how-tendi-works.html",
+    },
 }
 HOMEPAGE_DESCRIPTION_CLAUSES = (
     "Check in with one mood",
@@ -591,7 +596,7 @@ def validate_metadata_parity(value: object) -> None:
         fail("metadataParity.sharedImageAltAcrossPages must be true")
     canonical = value["canonicalByPage"]
     if not isinstance(canonical, dict) or set(canonical) != set(EXPECTED_CANONICAL_METADATA):
-        fail("metadataParity.canonicalByPage must contain exactly the three published pages")
+        fail("metadataParity.canonicalByPage must contain exactly the code-owned published pages")
     for page, expected in EXPECTED_CANONICAL_METADATA.items():
         actual = canonical[page]
         if not isinstance(actual, dict):
@@ -1495,8 +1500,9 @@ def check_claim_contract_selftest() -> None:
     metadata_mutations.append(("missing canonical metadata", missing_canonical))
     malformed_canonical = json.loads(json.dumps(base)); malformed_canonical["metadataParity"]["canonicalByPage"] = []
     metadata_mutations.append(("malformed canonical metadata", malformed_canonical))
-    incomplete_canonical = json.loads(json.dumps(base)); incomplete_canonical["metadataParity"]["canonicalByPage"].pop("support.html")
-    metadata_mutations.append(("incomplete canonical metadata", incomplete_canonical))
+    for page in EXPECTED_CANONICAL_METADATA:
+        incomplete_canonical = json.loads(json.dumps(base)); incomplete_canonical["metadataParity"]["canonicalByPage"].pop(page)
+        metadata_mutations.append((f"incomplete canonical metadata without {page}", incomplete_canonical))
     reordered_description = json.loads(json.dumps(base)); reordered_description["metadataParity"]["canonicalByPage"]["index.html"]["description"] = "Your entries build a record. Check in with one mood. Tendi is honest about what that record can actually show. No streaks. No account required."
     metadata_mutations.append(("reordered homepage description", reordered_description))
     unknown_metadata = json.loads(json.dumps(base)); unknown_metadata["metadataParity"]["canonicalByPage"]["index.html"]["unknown"] = True
@@ -1506,7 +1512,7 @@ def check_claim_contract_selftest() -> None:
     capture_only = json.loads(json.dumps(base))
     for metadata in capture_only["metadataParity"]["canonicalByPage"].values():
         metadata["description"] = "Check in with one mood."
-    metadata_mutations.append(("config and three page descriptions weakened to capture-only", capture_only))
+    metadata_mutations.append(("config and all page descriptions weakened to capture-only", capture_only))
     for label, malformed in metadata_mutations:
         expect_failure(lambda malformed=malformed: validate_config_schema(malformed, strict_presence=False), label)
 
@@ -1594,14 +1600,16 @@ def check_claim_contract_selftest() -> None:
 
     shared_alt = "shared alt"
     synthetic_pages = {
-        "index.html": parse_dom_text(f'<meta property="og:image:alt" content="different"><meta name="twitter:image:alt" content="{shared_alt}">'),
-        "privacy.html": parse_dom_text(f'<meta property="og:image:alt" content="{shared_alt}"><meta name="twitter:image:alt" content="{shared_alt}">'),
-        "support.html": parse_dom_text(f'<meta property="og:image:alt" content="{shared_alt}"><meta name="twitter:image:alt" content="{shared_alt}">'),
+        page: parse_dom_text(f'<meta property="og:image:alt" content="{shared_alt}"><meta name="twitter:image:alt" content="{shared_alt}">')
+        for page in CONFIG["pages"]
     }
-    expect_failure(
-        lambda: assert_metadata_cross_page_parity(valid_cross, parser=lambda page: synthetic_pages[page]),
-        "global metadata parity must still inspect index.html",
-    )
+    for page in CONFIG["pages"]:
+        mismatched_pages = dict(synthetic_pages)
+        mismatched_pages[page] = parse_dom_text(f'<meta property="og:image:alt" content="different"><meta name="twitter:image:alt" content="{shared_alt}">')
+        expect_failure(
+            lambda: assert_metadata_cross_page_parity(valid_cross, parser=lambda page: mismatched_pages[page]),
+            f"global metadata parity must still inspect {page}",
+        )
     missing_sitemap_url = llms_agreement_failures(
         {"mustContainVerbatim": ["promise"], "urlsMustAppearInSitemap": True, "sitemapPath": "sitemap.xml"},
         "promise [missing](https://tendijournal.app/missing.html)",

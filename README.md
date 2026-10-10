@@ -50,7 +50,7 @@ This runs static metadata/link/content checks plus Playwright browser rendering 
 
 ## Launch QA Notes
 
-- Pages: `index.html`, `privacy.html`, `support.html`
+- Pages: `index.html`, `privacy.html`, `support.html`, `how-tendi-works.html`
 - Cloudflare security hardening: follow `cloudflare-security.md` before launch or after DNS/security changes.
 - Metadata: canonical URLs, Open Graph, Twitter preview cards, theme color, PNG favicon, and social preview image are defined.
 - Accessibility: semantic sections, skip link, visible keyboard focus, responsive navigation, and minimum touch target sizing are included.

@@ -506,6 +506,40 @@ test("homepage navigation links to support", async ({ page }) => {
   await expect(primaryNavigation.getByRole("link", { name: "Support" })).toHaveAttribute("href", "support.html");
 });
 
+test("How Tendi works is linked across the site and keeps its policy and licence routes", async ({ page }) => {
+  for (const pageName of site.pages) {
+    await gotoWithConsoleChecks(page, pageName);
+    await expect(page.getByRole("navigation", { name: "Footer" }).getByRole("link", { name: "How it works" }))
+      .toHaveAttribute("href", "how-tendi-works.html");
+  }
+
+  await gotoWithConsoleChecks(page, "index.html");
+  const navigation = page.getByRole("navigation", { name: "Primary" });
+  await expect(navigation.getByRole("link", { name: "How it works" })).toHaveAttribute("href", "how-tendi-works.html");
+  const destinations = await navigation.locator("a").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
+  expect(destinations.indexOf("how-tendi-works.html")).toBeLessThan(destinations.indexOf("privacy.html"));
+
+  await gotoWithConsoleChecks(page, "support.html");
+  await expect(page.locator('[data-capture="privacy"] a[href="how-tendi-works.html"]')).toBeVisible();
+
+  await gotoWithConsoleChecks(page, "how-tendi-works.html");
+  await expect(page.locator("h1")).toHaveText("How Tendi works");
+  await expect(page.locator(".last-updated")).toHaveText("A plain-language guide. Last updated: October 10, 2026.");
+  const summary = page.locator('[data-capture="in-short"]');
+  await expect(summary.locator("li")).toHaveText([
+    "You check in with one mood. Everything else is optional.",
+    "Your entries build a record you can read, search and take with you.",
+    "Insights describe that record. They do not explain it, and they do not tell you what to do.",
+    "Your journal is stored on your device by default. There is no Tendi account."
+  ]);
+  await expect(summary.getByRole("link", { name: "Privacy Policy" })).toHaveAttribute("href", "privacy.html");
+  const eulaLinks = page.getByRole("link", { name: "Apple's standard End User Licence Agreement" });
+  await expect(eulaLinks).toHaveCount(2);
+  for (const link of await eulaLinks.all()) {
+    await expect(link).toHaveAttribute("href", "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/");
+  }
+});
+
 test("the social card was rendered by the pinned browser", async ({ browser }) => {
   test.skip(!site.socialCard, "socialCard provenance is not configured yet");
   const executable = chromium.executablePath();
