@@ -104,7 +104,7 @@
       "Tendi is planned for autumn 2026"
     ],
     "privacy.html": [
-      "the color remains a visible mood signal",
+      "That color is a visible mood signal",
       "recordings and transcripts",
       "You do not need a Tendi account",
       "iCloud sync",
@@ -117,12 +117,12 @@
       "Buttondown",
       "Buy Me a Coffee",
       "Find a Helpline",
-      "Privacy behavior in Tendi 1.0 (17) to (25). Builds 17 to 19 and 21 were available through internal TestFlight",
-      "TestFlight build 16 or older installations",
+      "Your journal on your device",
+      "Changing your analytics choice",
       "Optional on-device AI",
-      "If Tendi cannot save your choice, it displays a warning and a retry control.",
-      "TelemetryDeck does not guarantee a deadline for deleting analytics in cold storage",
-      "The Tendi website does not include client-side analytics scripts"
+      "If Tendi cannot save your choice, it shows a warning with a retry control.",
+      "TelemetryDeck does not guarantee a deletion deadline for cold storage",
+      "It does not include client-side analytics scripts"
     ],
     "support.html": [
       "the only export format capable of a complete restore",

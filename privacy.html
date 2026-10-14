@@ -37,138 +37,123 @@
 
     <main class="content-page" id="main">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: October 13, 2026</p>
-
-        <section class="content-section highlight-section" data-capture="version-notice">
-            <h2>Version notice</h2>
-            <p><strong>Privacy behavior in Tendi 1.0 (17) to (25). Builds 17 to 19 and 21 were available through internal TestFlight, builds 20, 22, 23 and 24 through external TestFlight, and Tendi 1.0 (25) is the external TestFlight candidate.</strong></p>
-            <p>The <a href="#tendi-1-0-13-privacy">build-specific privacy section</a> below describes the protections in builds 17 to 25. It does not mean TestFlight build 16 or older installations have gained those consent, cache-filtering, warning, or on-device-AI protections.</p>
-        </section>
+        <p class="last-updated">Last updated: October 14, 2026</p>
 
         <section class="content-section highlight-section" data-capture="the-short-version">
             <h2>The short version</h2>
-            <p>Tendi is built to keep your journal private.</p>
             <ul>
-                <li>Your mood entries, recordings and transcripts, notes, activities, photos, imports, exports, and insight data are stored on your device by default.</li>
-                <li>You do not need a Tendi account to use the app.</li>
-                <li>We do not sell your data, share it with advertisers, or use your journal content to train AI models.</li>
-                <li>If you turn on iCloud sync, Tendi syncs through your personal Apple iCloud account. Tendi cannot read your iCloud data.</li>
-                <li>Optional analytics are off by default and, if enabled, do not include journal text, mood notes, photos, voice recordings, HealthKit samples, or precise personal content.</li>
+                <li>Your journal is stored on your device by default. You do not need a Tendi account.</li>
+                <li>Optional iCloud sync uses your own Apple account. We do not receive or read your synced journal.</li>
+                <li>Analytics and on-device AI are optional and off by default.</li>
+                <li>We do not sell your data, share it with advertisers, or use your journal to train AI models.</li>
             </ul>
         </section>
 
-        <section class="content-section" data-capture="what-the-tendi-app-stores-locally">
-            <h2>What the Tendi app stores locally</h2>
-            <p>Tendi stores the data you create in the app on your device, including mood entries, notes, activities, photos, voice notes, Important Days, settings, reminders, import/export state, and insights calculated from your entries. This data is used to run the app and show your journal, charts, summaries, marked dates, and reminders.</p>
-            <p>Tendi does not send your journal entries, note text, photos, voice notes, or local insight details to Tendi servers.</p>
-            <p>Widgets and Apple Watch complications use small cached summaries for quick check-in state. When App Lock is off, iPhone widgets may show your total check-in count and the last logged mood or emoji; App Lock hides those widget summaries. A watch-face complication may show whether you logged today and a color associated with the last logged mood. It does not show mood text, emoji, a numeric mood value, totals, notes, prompts, transcripts, photos, HealthKit details, exact locations, or other private journal content, but the color remains a visible mood signal.</p>
+        <section class="content-section" data-capture="your-journal-on-your-device">
+            <h2>Your journal on your device</h2>
+            <p>Tendi stores your mood entries, notes, activities, photos, voice recordings and transcripts on your device. It also stores Important Days, settings, reminders, import and export information, and insights calculated from your entries. These let the app show your journal, charts, summaries, marked dates, and reminders.</p>
+            <p>Journal entries, photos, recordings, and local insight details are not sent to Tendi servers. Photos, voice notes, and imported journal data use your device's protected app storage.</p>
+        </section>
+
+        <section class="content-section" data-capture="widgets-and-apple-watch">
+            <h2>Widgets and Apple Watch</h2>
+            <p>iPhone widgets can show your total check-in count and last logged mood or emoji. App Lock hides these summaries.</p>
+            <p>Watch-face complications can show whether you logged today and a color associated with your last mood, even when App Lock is on. That color is a visible mood signal. Complications do not show mood text, emoji, numeric mood values, totals, notes, prompts, transcripts, photos, HealthKit details, exact locations, or other private journal content.</p>
         </section>
 
         <section class="content-section" data-capture="optional-icloud-sync">
             <h2>Optional iCloud sync</h2>
-            <p>If you enable iCloud sync, Tendi uses Apple's servers through your personal iCloud account. Your data syncs between your Apple devices through Apple's infrastructure. Tendi does not receive, host, or read your synced journal data.</p>
-            <p>You can turn iCloud sync off in Tendi settings. You can also manage iCloud data through Apple's iCloud settings.</p>
+            <p>If you enable iCloud sync, Tendi uses Apple's servers and your personal iCloud account to sync data between your Apple devices. Saved photos, voice notes, and imported journal content may sync too. We do not receive, host, or read your synced journal data.</p>
+            <p>You can turn iCloud sync off in Tendi's Settings and manage stored data through Apple's iCloud settings. Turning sync off does not remove data already in iCloud.</p>
         </section>
 
-        <section class="content-section" data-capture="healthkit">
-            <h2>HealthKit</h2>
-            <p>If you grant Apple Health access, Tendi can read supported HealthKit data such as sleep, steps, and workouts for local insights, and can write supported state-of-mind samples where available. If you turn on Cycle Insights, Tendi also requests access to menstrual-flow records for local insights.</p>
-            <p>HealthKit access is optional and controlled by iOS. HealthKit data is processed on device. Tendi does not send HealthKit samples to Tendi servers or analytics providers.</p>
-        </section>
-
-        <section class="content-section" data-capture="photos-voice-notes-and-imports">
-            <h2>Photos, voice notes, and imports</h2>
-            <p>Photos, voice notes, and imported journal data are stored locally in your device's protected app storage. If iCloud sync is enabled, this content may sync with Apple's servers through your personal iCloud account. Tendi does not upload this content to Tendi servers.</p>
+        <section class="content-section" data-capture="apple-health">
+            <h2>Apple Health</h2>
+            <p>With your permission, Tendi can read supported HealthKit data, such as sleep, steps, and workouts, for local insights. It can also write supported state-of-mind samples where available. Turning on Cycle Insights requests access to menstrual-flow records.</p>
+            <p>Apple Health access is optional. You can change its permissions in iOS Settings. Tendi processes HealthKit data on your device and does not send samples to Tendi servers or analytics providers. Apple Health permission and analytics consent are separate choices.</p>
         </section>
 
         <section class="content-section" data-capture="journaling-suggestions">
             <h2>Journaling Suggestions</h2>
-            <p>If you use Apple's Journaling Suggestions picker, Tendi may process details you select, such as reflection prompts, media references, activity context, workout summaries, place names, and photos, on device. Only details you add or keep—such as selected activities, saved photos, or a prompt—become part of the saved entry. Saved details remain local unless you choose to export them or enable iCloud sync.</p>
+            <p>When you use Apple's Journaling Suggestions picker, Tendi processes the details you select on your device. These can include prompts, media references, activities, workout summaries, place names, and photos. Only details you add or keep, such as an activity, photo, or prompt, become part of a saved entry and follow the same storage, sync, and export rules as the rest of your journal.</p>
         </section>
 
         <section class="content-section" data-capture="optional-on-device-ai">
             <h2>Optional on-device AI</h2>
-            <p>On supported iPhones and languages, you can optionally turn on AI features that improve related Journal search results and create adaptive journaling prompts. This setting is off by default.</p>
-            <p>When it is on, Tendi may give Apple's on-device System Language Model limited details from the current check-in, selected Journaling Suggestions context, recent local summaries, or one saved entry. Depending on the feature, those details can include mood or energy bands, feeling and activity names, note text, completed voice transcripts, photo captions, and saved prompt text. AI inference runs on your iPhone. Tendi does not send model inputs or generated output to Tendi servers, TelemetryDeck, or a server-side AI provider, and does not use journal content to train AI models. Using journal content as model input does not change that content's existing storage, optional iCloud sync, export, backup, or sharing behavior.</p>
-            <p>Generated search themes are stored only in a local cache. They are not stored in Core Data, synced through iCloud, included in Tendi exports or iPhone backups, or sent to analytics. Turning On-device AI off stops new generation and makes Journal search ignore cached AI themes; it does not delete that cache. Delete All Data removes it. Generated prompts are optional. Selecting one can store it in the protected local composer draft before the entry is saved; that draft does not sync or enter exports or backups. Once the entry is saved, its prompt becomes journal content and follows the same storage, optional iCloud sync, export, and backup rules as other saved entry details. Tendi falls back to curated prompts when the on-device model is unavailable or disabled.</p>
+            <p>On supported iPhones and languages, you can turn on AI features for related Journal search results and adaptive journaling prompts. The setting is off by default, and the AI processing runs on your iPhone.</p>
+            <p>These features may pass details from your current check-in, selected Journaling Suggestions, recent local summaries, or a saved entry to Apple's on-device language model. Depending on the feature, this can include mood or energy ranges, feeling and activity names, note text, completed voice transcripts, photo captions, and saved prompts.</p>
+            <p>Tendi does not send those AI inputs or outputs to Tendi servers, TelemetryDeck, or a server-side AI provider. We do not use journal content to train AI models. Journal content used by these features still follows its usual storage, iCloud sync, export, backup, and sharing rules.</p>
+            <p>AI-generated search themes are kept in a local cache, separate from your saved entries. They are excluded from iCloud sync, Tendi exports, iPhone backups, and analytics. Turning On-device AI off stops new generation and makes Journal search ignore the cached themes. It does not erase them; Delete All Data removes the cache.</p>
+            <p>You choose whether to use a generated prompt. Selecting one can save it in a protected local draft, which is excluded from sync, exports, and backups. Once you save the entry, the prompt becomes part of your journal and follows the same rules as other saved details. When the model is unavailable or AI is off, Tendi uses curated prompts.</p>
         </section>
 
         <section class="content-section" data-capture="optional-analytics">
             <h2>Optional analytics</h2>
-            <p>Tendi uses TelemetryDeck for optional app analytics. Analytics are off by default. If you enable them, Tendi may send categorical product-interaction events and a random, resettable app analytics identifier so we can understand which app areas are used and whether errors occur.</p>
-            <p>Analytics events do not include journal text, mood notes, photos, voice recordings, HealthKit samples, email addresses, precise location, or advertising identifiers. Analytics are not used for tracking or advertising.</p>
+            <p>We use TelemetryDeck to understand which parts of Tendi people use and where technical problems occur. Analytics are off by default, and you can use Tendi without enabling them. You can change your choice during onboarding or in Settings.</p>
+            <p>If you opt in, Tendi can send information about navigation, completed check-ins, whether details were added, insight use, reminders, imports, exports, and technical outcomes. Some events include counts or durations in broad ranges.</p>
+            <p>Events also include random session identifiers, event times, app version and build, operating-system version, platform information, whether the app came from the App Store or TestFlight, and the analytics software version. A random, resettable installation identifier is hashed before transmission so events can be associated over time. It is not an email address, account ID, or advertising identifier. Hashing does not make every event anonymous, and ordinary app-use events can still reveal context about how you use Tendi.</p>
+            <p>Analytics exclude journal and prompt text, mood and emotion values, activity names, search text, photos, recordings, transcripts, HealthKit samples, health measurements, cycle dates, precise locations, email addresses, and advertising identifiers. Tendi also excludes interactions with health and cycle settings, permissions and insight categories; health-history processing; wellbeing offers; breathing and grounding; and crisis-resource links. Opening context from Week Review or the pattern library is excluded too.</p>
+            <p>We do not use analytics for advertising or tracking across other companies' apps and websites, sell analytics data, or combine it with identifiable support or customer records.</p>
         </section>
 
-        <section class="content-section" id="tendi-1-0-13-privacy" data-capture="tendi-1-0-13-privacy">
-            <h2>Privacy behavior in Tendi 1.0 (17) to (25)</h2>
-            <p>Builds 17 to 19 were available through internal TestFlight. Build 18 added a clearer in-app on-device-AI disclosure. Builds 19 to 25 keep this privacy behavior and add restore, interface and Home fixes; build 25 is the external TestFlight candidate. Build 24 added protected-data and Watch-lock fixes and removed one unused analytics action. Build 25 adds Home, Journal, check-in, accessibility and local diagnostic fixes. Neither build adds data collection, permissions or transmission purposes. The general policy above continues to apply; this section describes the additional protections in these builds.</p>
-            <p>In Tendi 1.0 (17) to (25), analytics are optional and off by default. They measure permitted app interactions and technical operation. They do not send journal text, photos, recordings or HealthKit samples.</p>
-            <p>Tendi 1.0 (17) to (25) use TelemetryDeck for optional app-use and technical-operation measurements. You can use Tendi without enabling analytics. You can change your choice using the existing control in Settings or onboarding.</p>
-            <p>If you enable analytics, Tendi may send event names and coarse information about app navigation, completed check-ins, whether details were added, insight use, reminders, imports and exports, and technical outcomes. Some events include bounded counts or durations. They also carry random session identifiers, event times, app version and build, operating-system and platform information, distribution context, and the analytics SDK version. A random, resettable installation identifier is hashed before transmission and allows events to be associated over time. It is not your email address, an account ID or an advertising identifier. Hashing alone does not make every event anonymous.</p>
-            <p>Hide and Restore analytics record submitted actions without the insight category or subject. These counts do not confirm that the requested change was saved.</p>
-            <p>The app does not send journal text, selected mood or emotion values, activity names, search text, photos, recordings, transcripts, HealthKit samples, health measurements, cycle dates, or precise locations in these analytics payloads. Tendi does not use analytics for advertising or sell analytics data.</p>
-            <p>Analytics require a valid saved consent record for this installation. An old enabled setting by itself does not enable analytics. If no valid record exists, analytics stay off until you explicitly opt in; no additional prompt is forced. Valid current choices are preserved. Importing a Tendi backup preserves the current local analytics choice, including an opt-out, regardless of the backup's analytics setting.</p>
-            <p>Turning analytics off immediately blocks new analytics transmissions controlled by Tendi in the current session. When that choice is successfully saved, previously queued events become ineligible for transmission, including after restart or a later opt-in. If Tendi cannot save your choice, it displays a warning and a retry control. Transmissions remain blocked in that session, but the previous saved choice may return after restart. The warning remains when leaving onboarding or reopening Settings, and clears only after a successful save. Please retry before closing the app.</p>
-            <p>A request already released to the network may still complete. Turning analytics off prevents subsequent retries of withdrawn events; it cannot retract an earlier transmission. Turning analytics off or resetting the analytics identifier does not erase analytics already held by TelemetryDeck.</p>
-            <p>This version suppresses health and cycle setting and authorization events, health and cycle insight-category interactions, Health-history processing diagnostics, wellbeing-offer actions, breathing and grounding usage events, and crisis-resource-open events. It also suppresses the shared context-opening event in Week Review and the pattern library, including group routes. Matching events queued by an earlier version are excluded before dispatch, while permitted events in the same batch remain eligible subject to consent. General navigation, permitted insight use and journal-workflow events remain optional; they may still reveal app-use context.</p>
-            <p>HealthKit sample values and the local health-summary cache are not included in analytics payloads. Apple Health access and analytics consent are separate choices.</p>
-            <p>TelemetryDeck describes additional server-side hashing, rounding stored event times to the nearest hour and not storing incoming IP addresses for app analytics. We rely on its published <a href="https://telemetrydeck.com/docs/articles/anonymization-how-it-works/">technical description</a> and <a href="https://telemetrydeck.com/docs/guides/privacy-faq/">privacy FAQ</a> for those service-side practices. Events can still be associated through analytics and session identifiers. We do not join these analytics to identifiable support or customer records.</p>
-            <p>TelemetryDeck does not guarantee a deadline for deleting analytics in cold storage and says analytics may remain after we close our publisher account. We therefore do not promise a fixed analytics-deletion period. Disabling analytics or resetting its identifier in Tendi does not request deletion of data already held by TelemetryDeck. We cannot promise that historical analytics can be identified as yours or deleted individually. For privacy questions, contact <span data-email-user="hello" data-email-domain="twodesks.app">hello [at] twodesks [dot] app</span>.</p>
+        <section class="content-section" data-capture="changing-your-analytics-choice">
+            <h2>Changing your analytics choice</h2>
+            <p>Analytics require your explicit consent to be saved on this installation. If Tendi cannot read a valid saved choice, analytics stay off. Importing a Tendi backup keeps your current local analytics choice, including an opt-out.</p>
+            <p>Turning analytics off immediately blocks new transmissions controlled by Tendi for the current app session. Once that choice is saved, queued events cannot be sent, even after you restart Tendi or opt in again. A request already sent to the network may still complete; Tendi cannot recall it and will not retry it after you opt out.</p>
+            <p>If Tendi cannot save your choice, it shows a warning with a retry control. Analytics stay blocked for that session, but the previous saved choice may return after a restart. The warning remains if you leave onboarding or reopen Settings and clears after the choice is saved. Please retry before closing the app.</p>
+        </section>
+
+        <section class="content-section" data-capture="analytics-held-by-telemetrydeck">
+            <h2>Analytics held by TelemetryDeck</h2>
+            <p>TelemetryDeck says it applies additional hashing on its servers, rounds stored event times to the nearest hour, and does not store incoming IP addresses for app analytics. These practices are described in its <a href="https://telemetrydeck.com/docs/articles/anonymization-how-it-works/">technical description</a> and <a href="https://telemetrydeck.com/docs/guides/privacy-faq/">privacy FAQ</a>. Analytics and session identifiers can still associate events with one another.</p>
+            <p>Turning analytics off or resetting the identifier does not delete analytics already held by TelemetryDeck or request their deletion. TelemetryDeck does not guarantee a deletion deadline for cold storage and says data may remain after we close our publisher account. We cannot promise a fixed retention period or that we can identify and delete your past analytics individually.</p>
         </section>
 
         <section class="content-section" data-capture="this-website">
             <h2>This website</h2>
-            <p>The Tendi website does not include client-side analytics scripts. Cloudflare may process limited operational data for hosting, security, caching, and abuse prevention.</p>
-            <p>If you join the launch-updates list, your email address is sent to Buttondown so we can email you about Tendi's launch. We use that address for launch updates only. You can unsubscribe using the link in any email.</p>
-            <p>The website includes an optional Buy Me a Coffee link. If you choose to leave a tip, you leave tendijournal.app and Buy Me a Coffee handles the payment under its own terms and privacy policy.</p>
+            <p>This website is hosted on GitHub Pages with Cloudflare providing security, caching, and related services. It does not include client-side analytics scripts. Hosting and security services may process operational data needed to deliver the site and prevent abuse.</p>
+            <p>If you join the launch-updates list, Buttondown receives your email address so we can send you Tendi launch updates. We use it only for those emails. You can unsubscribe using the link in any email.</p>
+            <p>If you follow the optional Buy Me a Coffee link to leave a tip, you leave this website. Buy Me a Coffee handles the payment under its own terms and privacy policy.</p>
         </section>
 
-        <section class="content-section" data-capture="feedback-site">
-            <h2>Feedback site</h2>
-            <p>The feedback link opens a separate public Fider Cloud site operated by Northern App Labs Ltd and hosted through Amazon Web Services in the United States. If you submit feedback or sign in there, Fider and any authentication provider you choose may process feedback content, account or authentication information, and operational data such as your IP address and device or browser details.</p>
-            <p>Fider's current <a href="https://www.fider.io/legal/privacy">privacy policy</a>, <a href="https://www.fider.io/legal/data-processors">processor list</a>, and <a href="https://www.fider.io/legal/security-policy">security policy</a> describe its practices. Do not include journal text, health information, photos, exact locations, or anything private in public feedback.</p>
+        <section class="content-section" data-capture="public-feedback">
+            <h2>Public feedback</h2>
+            <p>Our feedback link opens a separate public Fider Cloud site, operated by Northern App Labs Ltd and hosted through Amazon Web Services in the United States. If you post feedback or sign in, Fider and your chosen authentication provider may process your feedback, account or sign-in information, IP address, and device or browser details.</p>
+            <p>See Fider's <a href="https://www.fider.io/legal/privacy">privacy policy</a>, <a href="https://www.fider.io/legal/data-processors">processor list</a>, and <a href="https://www.fider.io/legal/security-policy">security policy</a> for its practices. Please keep journal text, health information, photos, exact locations, and other private details out of public feedback.</p>
         </section>
 
         <section class="content-section" data-capture="support-emails-and-bug-reports">
             <h2>Support emails and bug reports</h2>
-            <p>If you contact us by email or send an in-app bug report, we receive your email address and any information you choose to include. In-app bug reports prefill the app version, build number, device model, and operating-system version so we can troubleshoot the issue; you can edit the message before sending it.</p>
-            <p>Please do not include sensitive journal content unless you want us to see it. Product and app support goes to <span data-email-user="support" data-email-domain="tendijournal.app">support [at] tendijournal [dot] app</span>. Privacy, security, and legal matters go to <span data-email-user="hello" data-email-domain="twodesks.app">hello [at] twodesks [dot] app</span>.</p>
+            <p>When you email us or send an in-app bug report, we receive your email address and whatever you include. In-app bug reports prefill your app version, build number, device model, and operating-system version to help us troubleshoot. You can edit the message before sending it.</p>
+            <p>Include sensitive journal content only if you want us to see it. For app support, write to <span data-email-user="support" data-email-domain="tendijournal.app">support [at] tendijournal [dot] app</span>. For privacy, security, or legal matters, write to <span data-email-user="hello" data-email-domain="twodesks.app">hello [at] twodesks [dot] app</span>.</p>
         </section>
 
-        <section class="content-section" data-capture="crisis-support-resources">
-            <h2>Crisis support resources</h2>
-            <p>If you choose to open crisis support resources in the app, Tendi may open Find a Helpline in your browser. Find a Helpline is operated by a third party and may process information according to its own privacy policy.</p>
-            <p>Tendi does not send your journal content, mood entries, HealthKit data, photos, voice notes, or analytics identifiers to Find a Helpline.</p>
+        <section class="content-section" data-capture="crisis-support-links">
+            <h2>Crisis support links</h2>
+            <p>If you open crisis support resources in Tendi, the app may open Find a Helpline in your browser. That service may process information under its own privacy policy. Tendi does not send it your journal content, mood entries, HealthKit data, photos, voice notes, or analytics identifiers.</p>
         </section>
 
-        <section class="content-section" data-capture="third-party-services">
-            <h2>Third-party services</h2>
-            <p>Tendi currently uses Apple platform services, including iCloud/CloudKit, HealthKit, Journaling Suggestions where you enable or invoke them, and Apple's on-device Foundation Models framework when you turn On-device AI on; TelemetryDeck for optional app analytics; and Find a Helpline for user-initiated crisis support resource links. The website is hosted through GitHub Pages with Cloudflare in front of tendijournal.app. Buttondown processes email addresses submitted through the website launch-updates form. Buy Me a Coffee handles optional website tips if you choose to leave one. Fider operates the separate public feedback site, including feedback submission and optional account or authentication features.</p>
-            <p>Journal content is never sent to Buttondown, Buy Me a Coffee, Find a Helpline, Fider, or the launch-updates list by the Tendi app.</p>
-            <p>We do not share Tendi journal content with advertising networks or data brokers.</p>
+        <section class="content-section" data-capture="sharing-with-other-services">
+            <h2>Sharing with other services</h2>
+            <p>The services described above support optional app features, this website, email updates, payments, feedback, and support. Tendi does not send journal content to Buttondown, Buy Me a Coffee, Find a Helpline, or Fider. Anything you choose to send in a support email or post as feedback is separate from your journal in the app.</p>
+            <p>We do not share journal content with advertising networks or data brokers.</p>
         </section>
 
-        <section class="content-section" data-capture="your-choices">
-            <h2>Your choices</h2>
-            <ul>
-                <li>Use Tendi without an account.</li>
-                <li>Keep analytics disabled, or disable analytics later in Settings.</li>
-                <li>Turn iCloud sync off in Settings.</li>
-                <li>Manage HealthKit permissions in iOS Settings.</li>
-                <li>Export your data from Tendi.</li>
-                <li>Delete individual entries or use Delete All Data for app-managed Tendi data. Deleting the app removes its local copy but does not necessarily delete data already synced to iCloud; synced data may remain or resync and must be managed through Delete All and/or Apple's iCloud data controls as applicable.</li>
-                <li>Ask us to delete launch-list or support-email records by contacting us.</li>
-            </ul>
+        <section class="content-section" data-capture="exporting-and-deleting-your-data">
+            <h2>Exporting and deleting your data</h2>
+            <p>You can export your data from Tendi, delete individual entries, or use Delete All Data to remove app-managed Tendi data.</p>
+            <p>Deleting the app removes its local copy but does not necessarily delete data synced to iCloud. Synced data may remain or return when sync resumes. Use Delete All Data and Apple's iCloud data controls as applicable to manage those copies.</p>
+            <p>You can ask us to delete launch-list or support-email records by contacting us. The limits on deleting analytics held by TelemetryDeck are explained above.</p>
         </section>
 
         <section class="content-section" data-capture="who-we-are">
             <h2>Who we are</h2>
-            <p>Tendi is built by Two Desks. Product and app support: <span data-email-user="support" data-email-domain="tendijournal.app">support [at] tendijournal [dot] app</span>. Privacy, security, and legal contact: <span data-email-user="hello" data-email-domain="twodesks.app">hello [at] twodesks [dot] app</span>. Public non-sensitive feedback: <a href="https://feedback.tendijournal.app">feedback.tendijournal.app</a>.</p>
+            <p>Tendi is built by Two Desks. Contact <span data-email-user="support" data-email-domain="tendijournal.app">support [at] tendijournal [dot] app</span> for app support or <span data-email-user="hello" data-email-domain="twodesks.app">hello [at] twodesks [dot] app</span> for privacy, security, and legal matters. You can leave public, non-sensitive feedback at <a href="https://feedback.tendijournal.app">feedback.tendijournal.app</a>.</p>
         </section>
 
         <section class="content-section" data-capture="changes-to-this-policy">
             <h2>Changes to this policy</h2>
-            <p>If we change this policy, we will update the date at the top of this page.</p>
+            <p>When we change this policy, we update the date at the top of this page.</p>
         </section>
     </main>
 
