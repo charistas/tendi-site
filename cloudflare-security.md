@@ -23,9 +23,8 @@ Applied on 2026-07-05 to both `tendijournal.app` and `twodesks.app`.
 
 ## Remaining Findings
 
-- Cloudflare is still modifying live HTML:
-  - Tendi email links are rewritten by Email Address Obfuscation.
-  - Two Desks receives Cloudflare-injected bot/AI-protection markup and JavaScript.
+- Cloudflare is still modifying live HTML on Two Desks, which receives Cloudflare-injected bot/AI-protection markup and JavaScript.
+- Tendi pages showed no Email Address Obfuscation rewriting on 2026-10-28. The live HTML of all four pages had no `data-cfemail` markup or `email-decode` script, and the email links came from the site's own `data-email-*` spans. The Cloudflare dashboard setting itself was not checked.
 
 ## Deferred: Strict CSP
 

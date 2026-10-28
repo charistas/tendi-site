@@ -9,7 +9,7 @@ Tendi is a self-reflection and journaling tool. It is not intended to diagnose, 
 ## Primary Pages
 
 - [Tendi homepage](https://tendijournal.app/): Product overview, the public promise, launch list, feature summary, support links, and privacy positioning.
-- [Tendi privacy policy](https://tendijournal.app/privacy.html): Full privacy details covering local storage, optional iCloud sync, HealthKit, Journaling Suggestions, optional analytics, widget and Watch summaries, Fider public-feedback processing, support/privacy contact routing, user-initiated Find a Helpline crisis resource links, Buttondown launch emails, the outbound Buy Me a Coffee support link, and Cloudflare hosting/security processing.
+- [Tendi privacy policy](https://tendijournal.app/privacy.html): Full privacy details covering local storage, device backups, optional iCloud sync, HealthKit, Journaling Suggestions, optional on-device AI, optional analytics, widgets, notifications, the Apple Watch app, deletion, Fider public-feedback processing, support/privacy contact routing, user-initiated Find a Helpline crisis resource links, Buttondown launch emails, the outbound Buy Me a Coffee support link, Cloudflare hosting/security processing, legal bases, and data-protection rights.
 - [Tendi support](https://tendijournal.app/support.html): Contact information, practical app and data answers, feedback and bug-reporting paths, privacy information, and crisis-support resources.
 
 - [How Tendi works](https://tendijournal.app/how-tendi-works.html): A plain-language guide to what Tendi does, where your journal lives, what you can take out, and what Tendi will not claim.
