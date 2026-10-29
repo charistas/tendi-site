@@ -122,7 +122,10 @@
       "Optional on-device AI",
       "If Tendi cannot save your choice, it shows a warning with a retry control.",
       "TelemetryDeck does not guarantee a deletion deadline for cold storage",
-      "It does not include client-side analytics scripts"
+      "It does not include client-side analytics scripts",
+      "This policy describes Tendi builds after build 26.",
+      "your previous saved choice may return after a restart",
+      "Who receives what"
     ],
     "support.html": [
       "the only export format capable of a complete restore",
