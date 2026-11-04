@@ -37,8 +37,8 @@
 
     <main class="content-page" id="main">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: October 30, 2026</p>
-        <p class="policy-scope">This policy describes Tendi builds after build 26. If you are testing build 26 or earlier, see <a href="#older-builds">Older TestFlight builds</a> for what works differently.</p>
+        <p class="last-updated">Last updated: November 4, 2026</p>
+        <p class="policy-scope">This policy describes Tendi build 28 and later. If you are testing build 27 or earlier, see <a href="#older-builds">Older TestFlight builds</a> for what works differently.</p>
 
         <section class="content-section highlight-section" id="short-version" data-capture="short-version">
             <h2>The short version</h2>
@@ -128,11 +128,14 @@
 
             <h3>Widgets, Lock Screen and app switcher</h3>
             <ul>
-                <li>iPhone widgets can show your check-in count and last mood. App Lock hides them.</li>
+                <li>Home Screen widgets can show today's mood, check-in time and energy, and a mood record covering the last seven days or four weeks. App Lock hides moods, energy and that record unless you turn on "Show moods on Home Screen widgets"; check-in controls and whether and when you checked in remain visible.</li>
+                <li>Lock Screen widgets show only whether and when you checked in, never your mood.</li>
                 <li>Watch-face complications and Smart Stack widgets can show whether you checked in today, the time of your latest check-in and a color for your last mood, even with App Lock on. That color is a visible mood signal. They do not show your mood as text, your check-in count, or the contents of your entries.</li>
                 <li>Important Day reminders show the day's title on the Lock Screen, or "An important day" with App Lock on. Check-in reminders use a few fixed, general phrases.</li>
                 <li>With App Lock off, the app switcher can show the last Tendi screen you saw. With App Lock on, Tendi covers it.</li>
             </ul>
+
+            <p>Tendi keeps the iPhone widget's small display summary in shared device settings, which are included in iPhone backups. Delete All Data clears it.</p>
 
             <h3>Apple Watch</h3>
             <p>The Watch app shows your last mood, recent saved check-ins and check-ins waiting for your iPhone, your check-in counts and the activities you can log, including custom ones. Recent entries can show their mood, time, feeling, activity names, energy level and a mark indicating a note, but not the note text. App Lock does not apply to the Watch app. In Always On mode, it hides moods, feelings, activity names, energy and note marks; counts and times remain visible.</p>
@@ -277,6 +280,7 @@
 
         <section class="content-section highlight-section note-section" id="older-builds" data-capture="older-builds">
             <h2>Older TestFlight builds</h2>
+            <p>In build 27 and earlier, iPhone widgets can show your check-in count and last mood. App Lock hides them.</p>
             <p>In TestFlight build 26 and earlier, these parts work differently:</p>
             <ul>
                 <li>Turning analytics on does not ask for your age range.</li>
