@@ -123,7 +123,7 @@
       "If Tendi cannot save your choice, it shows a warning with a retry control.",
       "TelemetryDeck does not guarantee a deletion deadline for cold storage",
       "It does not include client-side analytics scripts",
-      "This policy describes Tendi build 28 and later.",
+      "This policy describes Tendi builds 28 and 29.",
       "your previous saved choice may return after a restart",
       "Who receives what"
     ],
