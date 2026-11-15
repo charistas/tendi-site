@@ -91,7 +91,7 @@ The renderer owns its local server, waits for the bundled Fraunces font and rast
 
 The PNG screenshots remain as `<picture>` fallbacks. Current source PNGs are 424 x 920 simulator captures.
 
-The current PNGs predate `tendi#88`; a refresh from the app repository's `visual` lane is pending.
+The current PNGs were captured on 15 November 2026 from the app repository's `visual` lane at app commit `7c4f9b95`, on synthetic seed data: `HomeSceneryVisualCaptureTests/testCaptureCardStatesAndRoutes` (Home and check-in) and `InsightsRootCaptureTests/testCaptureInsightsRoot` (Insights, last 30 days). The entry image is the screenshot attached by `EntryDetailHeaderLayoutUITests/testNoteEntryUsesCompactHeaderAboveItsNote` in the `ui` lane, on the same commit and also on synthetic seed data. Each 1178 x 2556 capture was resized with `sips -z 920 424`.
 
 ```bash
 cwebp -quiet -q 82 assets/screenshot-home.png -o assets/screenshot-home.webp

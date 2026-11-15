@@ -831,8 +831,8 @@ def check_html_pages() -> None:
             if required.casefold() not in page_text:
                 failures.append(f"{page} is missing required text: {required}")
         if page == "index.html" and "Do I have to check in every day?" in CONFIG["requiredPageText"][page]:
-            if len(find_nodes(root, tag="details")) != 7:
-                failures.append("index.html must contain exactly seven FAQ details entries")
+            if len(find_nodes(root, tag="details")) != 9:
+                failures.append("index.html must contain exactly nine FAQ details entries")
     if ACTIVE_PATHS is None:
         for expected in CONFIG["expectedExternalLinks"]:
             if expected not in external_seen:

@@ -13,7 +13,7 @@
     <meta property="og:title" content="Tendi: Mood Journal - Check in with one mood.">
     <meta property="og:description" content="Check in with one mood. Your entries build a record, and Tendi is honest about what that record can actually show. No streaks. No account required.">
     <meta property="og:url" content="https://tendijournal.app/">
-    <meta property="og:image" content="https://tendijournal.app/social-card.png?v=20260824">
+    <meta property="og:image" content="https://tendijournal.app/social-card.png?v=20261115">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -21,7 +21,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tendi: Mood Journal - Check in with one mood.">
     <meta name="twitter:description" content="Check in with one mood. Your entries build a record, and Tendi is honest about what that record can actually show. No streaks. No account required.">
-    <meta name="twitter:image" content="https://tendijournal.app/social-card.png?v=20260824">
+    <meta name="twitter:image" content="https://tendijournal.app/social-card.png?v=20261115">
     <meta name="twitter:image:alt" content="Tendi: check in with one mood. A private mood journal for iPhone and Apple Watch, launching autumn 2026.">
     <link rel="preload" href="assets/fonts/Fraunces-opsz-wght-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
@@ -74,13 +74,13 @@
                 <figure class="device hero-device hero-device-home">
                     <picture>
                         <source srcset="assets/screenshot-home.webp" type="image/webp">
-                        <img src="assets/screenshot-home.png" alt="Tendi Home screen showing this week's mood takeaway and a Month Map calendar." width="424" height="920" decoding="async" fetchpriority="high">
+                        <img src="assets/screenshot-home.png" alt="Tendi Home screen showing a painting above the date, a Check in again button and today's latest entry." width="424" height="920" decoding="async" fetchpriority="high">
                     </picture>
                 </figure>
                 <figure class="device hero-device hero-device-insights">
                     <picture>
                         <source srcset="assets/screenshot-insights.webp" type="image/webp">
-                        <img src="assets/screenshot-insights.png" alt="Tendi Insights screen showing a mood-over-time chart and recent patterns." width="424" height="920" decoding="async">
+                        <img src="assets/screenshot-insights.png" alt="Tendi Insights screen for the last 30 days, showing a one-line summary, the days per mood and a mood-over-time chart." width="424" height="920" decoding="async">
                     </picture>
                 </figure>
             </div>
@@ -108,7 +108,7 @@
                         <figure class="device device--sm feature-device">
                             <picture>
                                 <source srcset="assets/screenshot-checkin.webp" type="image/webp">
-                                <img src="assets/screenshot-checkin.png" alt="Tendi check-in screen showing the simple mood picker." width="424" height="920" loading="lazy" decoding="async">
+                                <img src="assets/screenshot-checkin.png" alt="Tendi check-in screen with Good selected among five moods, optional energy and feeling, and a Save Check-in button." width="424" height="920" loading="lazy" decoding="async">
                             </picture>
                         </figure>
                         <div class="feature-copy">
@@ -122,7 +122,7 @@
                         <figure class="device device--sm feature-device">
                             <picture>
                                 <source srcset="assets/screenshot-entry-detail.webp" type="image/webp">
-                                <img src="assets/screenshot-entry-detail.png" alt="Tendi entry detail screen with mood context, note, and activities. The pressed flower specimen represents the chosen emotion." width="424" height="920" loading="lazy" decoding="async">
+                                <img src="assets/screenshot-entry-detail.png" alt="Tendi entry opened from the Journal list, showing its time, mood, feeling, energy, a short note and two activities beside a pressed flower specimen." width="424" height="920" loading="lazy" decoding="async">
                             </picture>
                         </figure>
                         <div class="feature-copy">
@@ -136,7 +136,7 @@
                         <figure class="device device--sm feature-device">
                             <picture>
                                 <source srcset="assets/screenshot-insights.webp" type="image/webp">
-                                <img src="assets/screenshot-insights.png" alt="Tendi Insights screen showing a mood-over-time chart and recent patterns." width="424" height="920" loading="lazy" decoding="async">
+                                <img src="assets/screenshot-insights.png" alt="Tendi Insights screen for the last 30 days, showing a one-line summary, the days per mood and a mood-over-time chart." width="424" height="920" loading="lazy" decoding="async">
                             </picture>
                         </figure>
                         <div class="feature-copy">
@@ -155,7 +155,7 @@
                     <p class="eyebrow">Visual memory</p>
                     <h2 id="evidence-title">A record that stays legible as it grows.</h2>
                     <p>
-                        Month Map gives entries calendar context. Journal keeps them easy to find. Herbarium collects them as pressed-specimen memories.
+                        Month Map and Year Map give entries calendar context. Journal keeps them easy to find. Herbarium collects them as pressed-specimen memories.
                     </p>
                 </div>
                 <dl class="archive-list reveal">
@@ -165,6 +165,13 @@
                             Month Map
                         </dt>
                         <dd>View your entries across the month, with each day reflecting the moods you recorded. It makes the shape of your recent days easier to scan.</dd>
+                    </div>
+                    <div>
+                        <dt>
+                            <span class="archive-mark archive-mark--year" aria-hidden="true"></span>
+                            Year Map
+                        </dt>
+                        <dd>View a calendar year month by month, with logged days reflecting the moods you recorded. Days without entries stay neutral.</dd>
                     </div>
                     <div>
                         <dt>
@@ -256,6 +263,14 @@
                     <details>
                         <summary>Can I get my journal out?</summary>
                         <p id="export-faq-answer">Yes. A full Tendi backup is designed for restoring your journal into Tendi. JSON and CSV carry entries for use elsewhere, and PDF is a readable report rather than a backup. Export and restore need no payment and no account.</p>
+                    </details>
+                    <details>
+                        <summary>Can I bring entries from another app?</summary>
+                        <p>Tendi can import Tendi backups, Daylio exports and compatible CSV files. Import needs no payment and no account.</p>
+                    </details>
+                    <details>
+                        <summary>Are there widgets?</summary>
+                        <p>Yes. Home Screen widgets can show today's mood, check-in time and energy, and a mood record covering the last seven days or four weeks. Lock Screen widgets show only whether and when you checked in, never your mood. You can start a check-in from either. With App Lock on, Home Screen widgets hide your moods unless you choose to show them.</p>
                     </details>
                     <details>
                         <summary>Which devices are supported?</summary>

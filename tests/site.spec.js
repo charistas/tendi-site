@@ -524,7 +524,7 @@ test("How Tendi works is linked across the site and keeps its policy and licence
 
   await gotoWithConsoleChecks(page, "how-tendi-works.html");
   await expect(page.locator("h1")).toHaveText("How Tendi works");
-  await expect(page.locator(".last-updated")).toHaveText("A plain-language guide. Last updated: October 10, 2026.");
+  await expect(page.locator(".last-updated")).toHaveText("A plain-language guide. Last updated: November 15, 2026.");
   const summary = page.locator('[data-capture="in-short"]');
   await expect(summary.locator("li")).toHaveText([
     "You check in with one mood. Everything else is optional.",

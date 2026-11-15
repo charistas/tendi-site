@@ -136,7 +136,7 @@
       "support [at] tendijournal [dot] app"
     ],
     "how-tendi-works.html": [
-      "A plain-language guide. Last updated: October 10, 2026.",
+      "A plain-language guide. Last updated: November 15, 2026.",
       "It is not a legal agreement.",
       "Your entries build a record you can read, search and take with you.",
       "They are context for you, not an input to Insights.",
@@ -401,15 +401,15 @@
   "socialCard": {
     "width": 1200,
     "height": 630,
-    "version": "20260824",
-    "pngSha256": "d8557790ce5672df6bdc2771c6990c2b81e594c62c37cc8a1e2b085c92489211",
+    "version": "20261115",
+    "pngSha256": "bfec26cd68328a4f88f0f86d1cd71dd92e0dedd3108636645ce75413b4ffdd28",
     "chromiumRevision": "1228",
     "browserVersion": "149.0.7827.55",
     "inputSha256": {
       "social-card.svg": "df29e8de74b264f09131cc54465a9527eb5307634172731d2eb6b0d04cea3e1c",
       "assets/app-icon.png": "f9501562ec589399ec95a9bd6d2d8a764e48d1eaabb31299850f650117d12e84",
-      "assets/screenshot-home.png": "5c6f9d0b02d2ab78cfe7cbd286c9dcb74369077b433531ab5d1f777e139a8a6a",
-      "assets/screenshot-insights.png": "25e221ed965db1b0c5769d8e3717e599f81f952a0b4fe0b9fec0d75626c36ab4",
+      "assets/screenshot-home.png": "b3c1a53f8528e35f9eba4655e386b434a973c21bbe0949a5a2830354a442dc59",
+      "assets/screenshot-insights.png": "a182ac4e14c92d93f8da44ddf7ffc8aa4ef25ebdb52762f202db71907da7d35f",
       "assets/fonts/Fraunces-opsz-wght-latin.woff2": "c5249733cadca6f1ecbdf833b0353d42ea108a615d0b40ec943d644c871b4a47",
       "tools/render_social_card.mjs": "7a1a533724b9e9dd35143e118f260cb194f2f2016b41f8b4b9a5e96a37e4dae7"
     },
